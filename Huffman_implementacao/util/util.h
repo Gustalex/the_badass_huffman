@@ -6,50 +6,27 @@
 #include <string.h>
 #include <stdbool.h>
 #include <math.h>
+// #include <windows.h>
 
 typedef unsigned char uchar;
 typedef unsigned long long int ulli;
 
-/*
-Retorna o tamanho do arquivo em bytes utliando a função fseek e ftell movendo o ponteiro até o final do arquivo
-e retornando a posição do ponteiro que é o tamanho do arquivo
-
-@param nome_arquivo: nome do arquivo a ser lido
-
-*/
+// retorna o tamanho do arquivo
 int tmn_arquivo(char *nome_arquivo);
 
-/*
-Retorna uma string com o nome do arquivo digitado pelo usuario
-
-*/
+// retorna uma string digitada pelo usuario
 char *input();
 
-/*
-Agrupa os bits em bytes e salva em um arquivo os bits que nao forma um byte completo
-sao completados com zeros que serao indicado no cabeçalho do arquivo como lixo
-
-@param nome_arquivo: nome do arquivo a ser lido
-
-*/
+// agrupa os bits em bytes e salva no arquivo
 void agrupar_em_bytes_e_salvar(char *nome_arquivo);
 
-/*
-Limpa a tela do terminal usanco uma sequencia de escape ANSI
-
-*/
+// limpa a tela do terminal
 void limpar_tela();
 
-/*
-Imprime uma arte no terminal
-
-*/
+// imprime uma arte no programa
 void print_art1();
 
-/*
-Imprime uma arte no terminal
-
-*/
+// imprime uma arte no programa
 void print_art2();
 
 #endif
